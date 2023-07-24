@@ -1,0 +1,20 @@
+.chat {
+    .chat__chat-list {
+        @apply h-40-rem;
+    }
+    .chat__user-list {
+        @apply h-screen;
+    }
+    .chat__box {
+        @apply h-44-rem;
+        .chat__box__text-box {
+            @apply max-w-[49%];
+            @include media-breakpoint-down(sm) {
+                @apply max-w-[90%];
+            }
+        }
+    }
+    .chat__box__input {
+        @apply h-[46px];
+    }
+}

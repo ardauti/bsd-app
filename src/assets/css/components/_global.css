@@ -1,0 +1,98 @@
+html {
+    @apply md:bg-slate-200;
+
+&
+.dark {
+    @apply bg-darkmode-800;
+
+body {
+    @apply text-slate-300;
+
+*,
+::before,
+::after {
+    @apply border-white/5;
+}
+
+}
+}
+body {
+    @apply bg-neutral-100;
+    [type='text']:focus {
+        --tw-ring-color: none !important;
+    }
+
+.css-1p3m7a8-multiValue {
+    background-color: #E2E8F0 !important;
+}
+
+.css-1y7rh0y-MultiValueGeneric2 {
+    font-size: 13px !important;
+    color: #303030 !important;
+}
+
+@apply antialiased overflow-x-hidden font-roboto text-sm text-slate-800;
+@include media-breakpoint-down(md) {
+    @apply px-0;
+}
+@include media-breakpoint-down(sm) {
+    @apply px-0;
+}
+}
+}
+.accordion-item {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border-radius: 99999px;
+    background-color: red;
+}
+
+.box-shadow-none:focus {
+    box-shadow: none !important;
+}
+
+.activeState {
+    border: 1px solid #1d4f62;
+}
+x-mapbox > .map {
+    height:80vh !important;
+}
+.pm-0 {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.content {
+    z-index: 0 !important;
+    margin-top: 0px !important;
+}
+.intro-y {
+    z-index: 0 !important;
+}
+.modal-xxl .modal-dialog {
+    @apply w-3/4;
+}
+.h-35-rem {
+    height: 35rem;
+}
+.h-40-rem {
+    height: 40rem;
+}
+.h-44-rem {
+    height: 44rem;
+}
+.h-60-vh {
+    height: 60vh;
+}
+.w-26-rem {
+    width: 26rem;
+}
+
+

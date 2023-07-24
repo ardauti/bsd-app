@@ -1,0 +1,36 @@
+.my-container {
+    position: relative;
+    width: 100%;
+    left: 0px;
+    overflow-y: hidden;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+.content {
+    padding: 0px 25px;
+    padding-left: 130px;
+    @apply ease-in-out duration-300 min-w-0 min-h-screen flex-1 pt-[70px] pb-10 dark:bg-darkmode-700;
+    @include media-breakpoint-down(md) {
+        @apply px-5 max-w-full pt-20;
+    }
+    @include media-breakpoint-down(md) {
+        @apply pl-5;
+    }
+    &:before {
+        content: "";
+        @apply w-full h-px block;
+    }
+    &.side-bar-open {
+        padding-left: 285px;
+        @include media-breakpoint-down(md) {
+            @apply pl-5;
+        }
+    }
+    &.content--top-nav {
+        border-radius: 35px 35px 0 0;
+        @apply pt-20;
+    }
+}
+.mobile-mode .content {margin-left:270px;width: 100%;}
+.mobile-mode .content:before {
+    @apply fixed left-[260px] right-0 top-0 z-50 w-full min-h-screen bg-black opacity-50 transition-opacity duration-300
+}
